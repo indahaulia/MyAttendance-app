@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".FormLembur"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:src="@drawable/img_overtime"
+        android:padding="10dp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FORM LEMBUR"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:textColor="@color/blue"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tanggal :"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/lembur_tgl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="01-01-2022"
+        android:inputType="datetime"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jam Mulai :"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/lembur_jam_mulai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="00:00"
+        android:inputType="datetime"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jam Selesai :"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/lembur_jam_selesai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="00:00"
+        android:inputType="datetime"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keterangan :"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/lembur_keterangan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/submitLembur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/lihatLembur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:text="LIHAT LEMBUR"/>
+
+</LinearLayout>
